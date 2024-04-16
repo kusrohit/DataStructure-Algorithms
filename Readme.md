@@ -8,6 +8,7 @@ Asymptotic Notation
 3. Big O Notation (Worst Case; Maximum time or space taken)
     - Upper Bound of an Algorimthm
     - `We always interested to finding max time taken by algorithms` 
+    - `kyoki hum chahte hai ki max hi sabse kam ho aur esi ko kam karne ki koshish karte hai.`
 
 
 Rules to find Big O
