@@ -51,6 +51,7 @@
 
 # for both ascending and desending array
 
+# order agnostic search
 def binarySearch(arr, target):
     start = 0
     end = len(arr) -1
