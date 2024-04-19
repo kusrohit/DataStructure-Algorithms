@@ -32,27 +32,31 @@
 def selectionSort(arr):
     for i in range(len(arr)):
         # find the max item in the remaining arr and swap with correct index
-        last = len(arr) - i -1
-
-
-        maxIndex = getMaxIndex(arr, 0, last)
         
+        last = len(arr)-i-1    # why we do here -1 when we +1 at getMaxIndex function becouse of we pass the last in swap which is needed to swap the real value.
+        maxIndex = getMaxIndex(arr, 0, last)
         swap(arr, maxIndex, last)
 
 
-def swap(arr, first, second):
-    arr[first], arr[second] = arr[second], arr[first]
 
+def swap(arr, max, end):
+    arr[max], arr[end] = arr[end], arr[max]
 
-def getMaxIndex(arr, start, last):
-    max = start
-    for start in range(last):
-        if(arr[max]< arr[start]):
-            max = start
-    return max
-
-
+def getMaxIndex(arr, start, end):
+    maxIndex = start
+    for i in range(end + 1):
+        if(arr[maxIndex] < arr[i]):
+            maxIndex = i      
+    return maxIndex
 
 arr = [4,22,5,7,8,1,23,1,4,67,7,5,4,5,5,6]
 selectionSort(arr)
 print(arr)
+
+# arr = [1,2,3,4,5]
+# for i in range(len(arr)):
+#     last = len(arr)-i -1
+#     print(f'i:{i}')
+#     for j in range(last+1):
+#         print(f'j:{j}')
+#     print()
