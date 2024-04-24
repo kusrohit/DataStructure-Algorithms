@@ -59,9 +59,17 @@ Generators are memory-efficient because they generate values on-the-fly, one at 
 Iteration:
 
 With simple functions, you typically use a return statement to return a computed value or a collection of values. You can then iterate over the returned value(s) using loops or other iterable methods.
-Generators use the yield statement to produce a sequence of values one at a time. You can iterate over these values using a loop or by passing the generator object to functions like next() or using constructs like for ... in ....
+Generators use the yield statement to produce a sequence of values one at a time. You can iterate over these values using a loop or by passing the generator   object to functions like next() or using constructs like for ... in ....
 State:
 
 Simple functions do not maintain any internal state between calls. Each time you call the function, it starts execution from the beginning.
 Generators maintain their internal state between calls. They remember where they left off when yielding a value and resume execution from that point the next time they're called. This allows generators to produce a sequence of values incrementally.
 In summary, simple functions are used to execute a block of code and return a value(s), while generators are used to lazily generate sequences of values, making them more memory-efficient, especially for large or infinite sequences.
+
+
+
+
+
+## Space and Time Complexity
+
+time complexity : O(1) < O(log N) < O(N) < O(N log N) < O(2^N)

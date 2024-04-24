@@ -32,3 +32,16 @@
 
 # is_complete = arr_generate()
 # print(is_complete)
+
+
+
+# string are immutable
+
+name = 'rohit'
+noun = 'rohit'
+print(id(name))
+print(id(noun))
+name[0] = 'm'
+print(name[0])
+print(id(name))
+print(id(noun))
