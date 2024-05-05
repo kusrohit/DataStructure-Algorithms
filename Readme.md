@@ -73,3 +73,35 @@ In summary, simple functions are used to execute a block of code and return a va
 ## Space and Time Complexity
 
 time complexity : O(1) < O(log N) < O(N) < O(N log N) < O(2^N)
+
+
+## Some logical notes:
+
+AND (&): The result is 1 only if all corresponding bits in the inputs are 1.
+Shortcut: "All bits must be 1 to get 1."
+
+1 & 1 & 1 &.... -> 1
+0 & 1 & 1 ... -> 0  when it gets 0, not check any further input bit
+
+OR (|): The result is 1 if any corresponding bit in the inputs is 1.
+Shortcut: "Any bit being 1 results in 1."
+
+0 & 0 & 0 & 0 & 1 -> 1
+1 & 0 & 0 & 0... -> 1 when it gets 1, not check any further input bit
+
+XOR (^): The result is 1 if the number of corresponding bits that are 1 is odd.
+Shortcut: "Odd number of 1s result in 1."
+
+NOT (~): It simply flips each bit of the input.
+Shortcut: "Flips all the bits."
+
+
+
+
+## some notes on array with time complexity?
+
+
+O(N), Only one traversal is needed, i.e, i from 0 to n and j from n-1 to 0 with at most 2*N steps. The above approach will also work for the M x N matrix (not only for N x N). Complexity would be O(M + N)
+
+
+

@@ -10,6 +10,9 @@
 
 # last function call is known as tail recursion
 
+# recursive method to solve, it takes a lot of times if the input is slightly change
+
+# so this is not a optimal solving for this problem or any other problems
 
 def fibo(n):
     # base condition
